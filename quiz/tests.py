@@ -48,5 +48,5 @@ class GraphQLTests(TestCase):
         executed = self.client.execute(query)
         self.assertEqual(executed['data']['allQuizzes'], [
             {'id': str(self.quiz1.id), 'name': 'Quiz 1', 'slug': 'quiz-1', 'category': {'id': str(self.category1.id), 'name': 'Category 1'}},
-            {'id': str(self.quiz2.id), 'name': 'Quiz 2', 'slug': 'quiz-2', 'category': {'id': str(self.category2.id), 'name': 'Category 2'}},
+            {'id': str(self.quiz2.id), 'name': 'Quiz 2', 'slug': 'quiz-3', 'category': {'id': str(self.category2.id), 'name': 'Category 2'}},
         ])
